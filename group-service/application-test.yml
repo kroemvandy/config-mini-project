@@ -1,0 +1,16 @@
+spring:
+  application-name: "group-service"
+  profiles: "test"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5432/group-service"
+    username: postgres
+    password: 123
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      format-sql: true
